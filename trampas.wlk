@@ -8,6 +8,8 @@ class Bomba {
         return "bomba.png"
     }
 
+    method esSolido() { return false}
+
     
 }
 
