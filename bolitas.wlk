@@ -5,7 +5,11 @@ class Bolitas{
 
     method imagen() {
       "bolita.png"
-    } 
+    }
+
+    method chocoConPacman() {
+      game.removeVisual(self)
+    }
 
     method esSolido() { return false}
 
