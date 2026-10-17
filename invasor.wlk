@@ -29,13 +29,14 @@ class Invasor {
 class Proyectil {
   var property position
   const direccion 
+  method esSolido() { return false}
 
   method image() {
         return "proyectil.png"
   }
 
     method initialize() {
-        game.whenCollideDo(self, { unPersonaje => 
+        game.onCollideDo(self, { unPersonaje => 
             unPersonaje.matar()
                 
                 

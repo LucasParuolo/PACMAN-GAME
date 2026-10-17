@@ -1,3 +1,4 @@
+import muro.*
 import trampas.*
 import wollok.game.*
 import pacman.*
@@ -18,7 +19,7 @@ program juego {
 //MUSICA DE FONDO
   const musicaFondo = game.sound("musica_fondo.mp3")
       musicaFondo.shouldLoop(true)
-      game.schedule(300, { musicaFondo.play()} )
+      game.schedule(300, { musicaFondo.play()})
 
 
 
@@ -37,6 +38,8 @@ program juego {
   game.schedule(5000, { game.addVisual(new BombaRandom (position = game.at(2, 10)))})
   game.schedule(5000,{ game.addVisual(new BombaRandom (position = game.at(12, 10)))})
   game.schedule(5000,{ game.addVisual(new BombaRandom (position = game.at(10, 10)))})
+
+  (1..8).forEach({ x => game.addVisual(new Muro(position = game.at(x, 14))) })
 
 // SPAWNER DISPARADORES
   spawner.spawnearCant_Invasores(2)
