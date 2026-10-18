@@ -24,6 +24,7 @@ class Invasor {
 
         game.onTick(100, "movimiento_proyectil_" + proyectil.identity().toString(), {proyectil.avanzar()})
     }
+    
 }
 
 class Proyectil {

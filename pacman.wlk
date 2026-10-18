@@ -15,9 +15,9 @@ object pacman {
         muerte.sonidoMuerte()
         game.removeVisual(self)
     }
-    method text () {
-        return  "=" + bombas
-    }
+    //method text () {
+        //return  "=" + bombas
+    //}
     method image(){
         return "pacman-" + direccionActual.nombreDireccion() + ".png"
     }
@@ -31,10 +31,10 @@ object pacman {
     }
     method mover(direccion) {
 		const nuevaPosition = direccion.siguiente(position) 
-		if (not self.hayMurosAdelante(position)) {
-			position = nuevaPosition
-			direccionActual = direccion
-		}
+		if (not self.hayMurosAdelante(nuevaPosition)) {
+        position = nuevaPosition
+        direccionActual = direccion
+    }
 	}
 
     method hayMurosAdelante(posicion) {
