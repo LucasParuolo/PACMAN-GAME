@@ -5,23 +5,15 @@ import direcciones.*
 import bombasRandom.*
 import spawners.*
 import menu.*
+import fantasmas.*
 
 program juego {
 
   game.title("PACMAN INVADERS")
   
   game.boardGround(menu.fondoDeJuego())
-  game.height(15)
-	game.width(15)
-  
-
-//MUSICA DE FONDO
-  const musicaFondo = game.sound("musica_fondo.mp3")
-      musicaFondo.shouldLoop(true)
-      game.schedule(300, { musicaFondo.play()} )
-
-
-
+  game.height(20)
+	game.width(20)
 //CONTROLES MENU
   keyboard.space().onPressDo({menu.iniciar()})
 
