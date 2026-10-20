@@ -6,29 +6,15 @@ import direcciones.*
 import bombasRandom.*
 import spawners.*
 import menu.*
+import fantasmas.*
 
 program juego {
 
   game.title("PACMAN INVADERS")
   
   game.boardGround(menu.fondoDeJuego())
-  game.height(15)
-	game.width(15)
-
-
-  
-  (0..14).forEach({ x => game.addVisual(new Muro(position = game.at(x, 14))) })
-  (0..14).forEach({ x => game.addVisual(new Muro(position = game.at(x, 0))) })
-  (0..14).forEach({ x => game.addVisual(new Muro(position = game.at(0, x))) })
-  (0..14).forEach({ x => game.addVisual(new Muro(position = game.at(14, x))) })
-
-//MUSICA DE FONDO
-  const musicaFondo = game.sound("musica_fondo.mp3")
-      musicaFondo.shouldLoop(true)
-      game.schedule(300, { musicaFondo.play()})
-
-
-
+  game.height(20)
+	game.width(20)
 //CONTROLES MENU
   keyboard.space().onPressDo({menu.iniciar()})
 

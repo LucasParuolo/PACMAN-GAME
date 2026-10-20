@@ -14,6 +14,7 @@ object pacman {
     method matar(){
         muerte.sonidoMuerte()
         game.removeVisual(self)
+        bombas = 0
     }
     //method text () {
         //return  "=" + bombas
