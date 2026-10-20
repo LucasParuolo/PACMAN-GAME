@@ -1038,3 +1038,42 @@
 {"level":"info","message":"🚀 Program executed \u001b[3m\u001b[34mpacman-game.juego\u001b[39m\u001b[23m on \u001b[3m\u001b[34mc:\\Users\\fabri\\OneDrive\\Documentos\\N05\\PACMAN-GAME-INVADERS\u001b[39m\u001b[23m","ok":true,"timeElapsed":403,"timestamp":"2026-10-18T02:14:44.709Z"}
 {"exitCode":"SIGHUP","level":"info","message":"👾 Game executed pacman-game.juego on c:\\Users\\fabri\\OneDrive\\Documentos\\N05\\PACMAN-GAME-INVADERS","timeElapsed":224584,"timestamp":"2026-10-18T02:18:28.891Z"}
 {"level":"info","message":"🚀 Program executed \u001b[3m\u001b[34mpacman-game.juego\u001b[39m\u001b[23m on \u001b[3m\u001b[34mc:\\Users\\fabri\\OneDrive\\Documentos\\N05\\PACMAN-GAME-INVADERS\u001b[39m\u001b[23m","ok":true,"timeElapsed":420,"timestamp":"2026-10-18T02:18:31.543Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":1432,"timestamp":"2026-10-20T19:05:44.834Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":494,"timestamp":"2026-10-20T19:05:45.403Z"}
+{"level":"info","message":"⌛ Validating muro.wlk","timeElapsed":892,"timestamp":"2026-10-20T19:05:55.831Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":251,"timestamp":"2026-10-20T19:05:56.083Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":490,"timestamp":"2026-10-20T19:05:56.657Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":808,"timestamp":"2026-10-20T19:05:57.467Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":282,"timestamp":"2026-10-20T19:05:57.750Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":344,"timestamp":"2026-10-20T19:05:58.100Z"}
+{"level":"info","message":"⌛ Validating muro.wlk","timeElapsed":881,"timestamp":"2026-10-20T19:05:58.989Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":414,"timestamp":"2026-10-20T19:05:59.404Z"}
+{"level":"info","message":"⌛ Validating trampas.wlk","timeElapsed":587,"timestamp":"2026-10-20T19:06:00.015Z"}
+{"level":"info","message":"⌛ Validating spawners.wlk","timeElapsed":966,"timestamp":"2026-10-20T19:06:00.983Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":1205,"timestamp":"2026-10-20T19:06:02.191Z"}
+{"level":"info","message":"⌛ Validating sonidos.wlk","timeElapsed":1021,"timestamp":"2026-10-20T19:06:03.213Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":884,"timestamp":"2026-10-20T19:06:04.098Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":1009,"timestamp":"2026-10-20T19:06:05.151Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":1154,"timestamp":"2026-10-20T19:06:06.307Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":480,"timestamp":"2026-10-20T19:06:06.788Z"}
+{"level":"info","message":"⌛ Validating pacman.wtest","timeElapsed":1228,"timestamp":"2026-10-20T19:06:08.018Z"}
+{"level":"info","message":"⌛ Validating pacman.wlk","timeElapsed":681,"timestamp":"2026-10-20T19:06:08.699Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":426,"timestamp":"2026-10-20T19:06:09.127Z"}
+{"level":"info","message":"⌛ Validating pacman-game.wpgm","timeElapsed":876,"timestamp":"2026-10-20T19:06:10.003Z"}
+{"level":"info","message":"⌛ Validating invasor.wlk","timeElapsed":547,"timestamp":"2026-10-20T19:06:10.551Z"}
+{"level":"info","message":"⌛ Validating fantasmas.wlk","timeElapsed":413,"timestamp":"2026-10-20T19:06:10.965Z"}
+{"level":"info","message":"⌛ Validating direcciones.wlk","timeElapsed":596,"timestamp":"2026-10-20T19:06:11.621Z"}
+{"level":"info","message":"⌛ Validating bombasRandom.wlk","timeElapsed":534,"timestamp":"2026-10-20T19:06:12.158Z"}
+{"level":"info","message":"⌛ Validating bolitas.wlk","timeElapsed":751,"timestamp":"2026-10-20T19:06:14.458Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":1245,"timestamp":"2026-10-20T19:06:37.506Z"}
+{"level":"info","message":"⌛ Validating trampas.wlk","timeElapsed":808,"timestamp":"2026-10-20T19:06:38.560Z"}
+{"level":"info","message":"⌛ Validating spawners.wlk","timeElapsed":436,"timestamp":"2026-10-20T19:06:38.997Z"}
+{"level":"info","message":"⌛ Validating sonidos.wlk","timeElapsed":533,"timestamp":"2026-10-20T19:06:39.542Z"}
+{"level":"info","message":"⌛ Validating pacman.wtest","timeElapsed":709,"timestamp":"2026-10-20T19:06:40.253Z"}
+{"level":"info","message":"⌛ Validating pacman.wlk","timeElapsed":457,"timestamp":"2026-10-20T19:06:40.714Z"}
+{"level":"info","message":"⌛ Validating pacman-game.wpgm","timeElapsed":467,"timestamp":"2026-10-20T19:06:41.181Z"}
+{"level":"info","message":"⌛ Validating invasor.wlk","timeElapsed":627,"timestamp":"2026-10-20T19:06:41.809Z"}
+{"level":"info","message":"⌛ Validating fantasmas.wlk","timeElapsed":440,"timestamp":"2026-10-20T19:06:42.252Z"}
+{"level":"info","message":"⌛ Validating direcciones.wlk","timeElapsed":715,"timestamp":"2026-10-20T19:06:42.970Z"}
+{"level":"info","message":"⌛ Validating bombasRandom.wlk","timeElapsed":376,"timestamp":"2026-10-20T19:06:43.348Z"}
+{"level":"info","message":"⌛ Validating bolitas.wlk","timeElapsed":439,"timestamp":"2026-10-20T19:06:43.787Z"}
