@@ -283,3 +283,5 @@
 {"exitCode":"SIGHUP","level":"info","message":"👾 Game executed pacman-game.juego on c:\\Users\\usuario\\OneDrive\\Escritorio\\PACMAN-GAME","timeElapsed":70250,"timestamp":"2026-10-20T19:05:37.452Z"}
 {"level":"info","message":"🚀 Program executed \u001b[3m\u001b[34mpacman-game.juego\u001b[39m\u001b[23m on \u001b[3m\u001b[34mc:\\Users\\usuario\\OneDrive\\Escritorio\\PACMAN-GAME\u001b[39m\u001b[23m","ok":true,"timeElapsed":405,"timestamp":"2026-10-20T19:05:39.149Z"}
 {"exitCode":"SIGHUP","level":"info","message":"👾 Game executed pacman-game.juego on c:\\Users\\usuario\\OneDrive\\Escritorio\\PACMAN-GAME","timeElapsed":183260,"timestamp":"2026-10-20T19:08:42.004Z"}
+{"level":"info","message":"🚀 Program executed \u001b[3m\u001b[34mpacman-game.juego\u001b[39m\u001b[23m on \u001b[3m\u001b[34mc:\\Users\\usuario\\OneDrive\\Escritorio\\PACMAN-GAME\u001b[39m\u001b[23m","ok":true,"timeElapsed":434,"timestamp":"2026-10-20T20:16:05.243Z"}
+{"exitCode":"SIGHUP","level":"info","message":"👾 Game executed pacman-game.juego on c:\\Users\\usuario\\OneDrive\\Escritorio\\PACMAN-GAME","timeElapsed":47160,"timestamp":"2026-10-20T20:16:51.969Z"}
