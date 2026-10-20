@@ -24,18 +24,20 @@ class Invasor {
 
         game.onTick(100, "movimiento_proyectil_" + proyectil.identity().toString(), {proyectil.avanzar()})
     }
+    
 }
 
 class Proyectil {
   var property position
   const direccion 
+  method esSolido() { return false}
 
   method image() {
         return "proyectil.png"
   }
 
     method initialize() {
-        game.whenCollideDo(self, { unPersonaje => 
+        game.onCollideDo(self, { unPersonaje => 
             unPersonaje.matar()
                 
                 

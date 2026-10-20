@@ -1,3 +1,4 @@
+import muro.*
 import trampas.*
 import wollok.game.*
 import pacman.*
@@ -28,6 +29,19 @@ program juego {
   keyboard.b().onPressDo({pacman.ponerBomba() })
   
 
+// BOMBAS AZULES
+  game.schedule(5000, { game.addVisual(new BombaRandom (position = game.at(2, 10)))})
+  game.schedule(5000,{ game.addVisual(new BombaRandom (position = game.at(12, 10)))})
+  game.schedule(5000,{ game.addVisual(new BombaRandom (position = game.at(10, 10)))})
+
+// SPAWNER DISPARADORES
+  spawner.spawnearCant_Invasores(2)
+
+// SPAWNER DISPARADORES
+  spawner.spawnearCant_Invasores(2)
+
+// COLISIONES 
+  game.onCollideDo(pacman, {elemento => elemento.chocoConPacman()})
   game.start()
   
 }
