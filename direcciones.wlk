@@ -1,61 +1,39 @@
-import game.*
+import wollok.game.*
 object tablero {
-    
-    method validarDentro(position) {
-        if (not self.dentro(position)) {
-            self.error(position.toString() + " no está dentro del tablero ")
-        }
-    }
-
     method dentro(position) {
-        return position.x().between(0, game.width() -1) and position.y().between(0, game.height() -1 )
+        return position.x().between(0, game.width() - 1) 
+           and position.y().between(0, game.height() - 1)
     }
 }
 
 object arriba {
-
     method siguiente(position) {
-        const nueva = position.up(1) 
-        tablero.validarDentro(nueva)
-        return nueva
+        const nueva = game.at(position.x(), position.y() + 1)
+        return if (tablero.dentro(nueva)) nueva else position
     }
-    method nombreDireccion(){
-        return "arriba"
-    }
+    method nombreDireccion() = "arriba"
 }
 
-
 object abajo {
-    
     method siguiente(position) {
-        const nueva = position.down(1) 
-        tablero.validarDentro(nueva)
-        return nueva
+        const nueva = game.at(position.x(), position.y() - 1)
+        return if (tablero.dentro(nueva)) nueva else position
     }
-        method nombreDireccion(){
-        return "abajo"
-    }
+    method nombreDireccion() = "abajo"
 }
 
 object derecha {
     method siguiente(position) {
-        const nueva = position.right(1) 
-        tablero.validarDentro(nueva)
-        return nueva
+        const nueva = game.at(position.x() + 1, position.y())
+        return if (tablero.dentro(nueva)) nueva else position
     }
-        method nombreDireccion(){
-        return "derecha"
-    }
-
+    method nombreDireccion() = "derecha"
 }
-object izquierda{
-    method siguiente(position) {
-        const nueva = position.left(1) 
-        tablero.validarDentro(nueva)
-        return nueva
-    }
-        method nombreDireccion(){
-        return "izquierda"
-    }
 
+object izquierda {
+    method siguiente(position) {
+        const nueva = game.at(position.x() - 1, position.y())
+        return if (tablero.dentro(nueva)) nueva else position
+    }
+    method nombreDireccion() = "izquierda"
 }

@@ -1,7 +1,9 @@
+import pacman-game.*
 import wollok.game.*
 import direcciones.*
 import trampas.*
 import sonidos.*
+import mapa.*
 
 
 object pacman {
@@ -30,16 +32,32 @@ object pacman {
     method position(){
         return position
     }
+
     method mover(direccion) {
-		const nuevaPosition = direccion.siguiente(position) 
-		if (not self.hayMurosAdelante(nuevaPosition)) {
-        position = nuevaPosition
-        direccionActual = direccion
+        const nuevaPosition = direccion.siguiente(position) 
+        
+        // Si la dirección devolvió una posición diferente (no se chocó contra el borde del mapa)
+        if (nuevaPosition != position) {
+            if (not self.hayMurosAdelante(nuevaPosition)) {
+                position = nuevaPosition
+                direccionActual = direccion
+            }
+        }
     }
-	}
 
     method hayMurosAdelante(posicion) {
-      return game.getObjectsIn(posicion).any({ objeto => objeto.esSolido() })
+        // Obtenemos el diseño de texto del mapa
+        const mapaTexto = generadorMapa.diseño()
+        
+        // Traducimos la coordenada Y de Wollok a la fila de la lista de texto (19 - y)
+        const filaTexto = 19 - posicion.y()
+        const columnaTexto = posicion.x()
+        
+        // Leemos el caracter exacto en esa posición
+        const caracter = mapaTexto.get(filaTexto).charAt(columnaTexto)
+        
+        // Si el caracter es "#", es un muro sólido. Retorna true.
+        return caracter == "#"
     }
 
     method ponerBomba(){
@@ -48,8 +66,6 @@ object pacman {
             bombas -= 1
             game.addVisual(new Bomba (position = self.position()))
         }
-
-        //
 
     }
 
