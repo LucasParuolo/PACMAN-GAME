@@ -24,9 +24,9 @@ object menu {
         game.addVisual(fondo)
 
 //MUSICA DE FONDO
-        const musicaFondo = game.sound("musica_fondo.mp3")
-        musicaFondo.shouldLoop(true)
-        game.schedule(300, { musicaFondo.play()} )
+        //const musicaFondo = game.sound("musica_fondo.mp3")
+        //musicaFondo.shouldLoop(true)
+        //game.schedule(300, { musicaFondo.play()} )
 
 
 
